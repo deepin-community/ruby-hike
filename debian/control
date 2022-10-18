@@ -1,0 +1,19 @@
+Source: ruby-hike
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+	       gem2deb (>= 0.3.0~)
+Standards-Version: 3.9.3
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-hike.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-hike.git;a=summary
+Homepage: http://github.com/sstephenson/hike
+XS-Ruby-Versions: all
+
+Package: ruby-hike
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+Description: Ruby library to find files in a set of paths
+ Hike is a Ruby library for finding files in a set of paths.
